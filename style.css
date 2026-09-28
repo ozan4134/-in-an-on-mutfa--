@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f1f5f8;
+}
+
+/* Sayfa Başlığı Stili */
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.title h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+  color: #333;
+}
+
+/* Buton Konteyneri ve Buton Stilleri */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 3rem;
+}
+
+.btn-item {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+}
+
+/* Menü Elemanları (Kartlar) Stili */
+.menu-items {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+/* Yemek Görselleri */
+.photo {
+  width: 175px;
+  height: 175px;
+  object-fit: cover; /* Resmin bozulmadan sığmasını sağlar */
+  border: 4px solid #222;
+  border-radius: 10px;
+  margin-right: 1.5rem;
+}
+
+/* Yemek Bilgileri (Başlık, Fiyat, Açıklama) */
+.menu-info {
+  flex: 1; /* Geriye kalan tüm alanı kaplar */
+}
+
+/* Yemek Başlığı ve Fiyatını Yan Yana Getirme */
+.menu-title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted #222;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.menu-title h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+
+/* Fiyat Rengi */
+.price {
+  color: #c59d5f;
+}
+
+/* Yemek Açıklaması */
+.menu-text {
+  padding-top: 1rem;
+  color: #617d98;
+}
+
+/* Mobil Cihazlar İçin Uyum (Responsive Design) */
+@media screen and (max-width: 768px) {
+  .menu-items {
+    flex-direction: column; /* Mobilde alt alta sırala */
+    align-items: center;
+    text-align: center;
+  }
+  .photo {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
